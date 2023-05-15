@@ -1,0 +1,112 @@
+.about{
+    height:70vh;
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+
+   
+    .wrapper{
+        margin-left: 100px;
+        background-color: white;
+        height: 40vh;
+        width: 60vw;
+        border-radius: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        @media screen and (max-width: 480px) {
+            height: 40vh;
+            width: 80vw;}
+
+       
+        
+
+        
+
+        .left{
+            flex:1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+           
+                
+
+            
+            .imagecontainer{
+                height: 120px;
+                width: 120px;
+                border-radius: 50px;
+                margin:10px;
+                @media screen and (max-width: 480px) {
+                height: 60px;
+                width: 60px;
+                border-radius: 25px;
+                margin:5px}
+
+                
+
+                
+
+            }
+        }
+        .right{
+            flex:1;
+            .rightcontainer{
+                background-color: white;
+                height: 40vh;
+                display:flex;
+                flex-direction: column;
+                justify-content: center;
+              
+
+                
+            
+            
+            p{
+                margin-top: 10px;
+                margin-bottom: 10px;
+                @media screen and (max-width: 480px) {
+                    margin-top: 5px;
+                margin-bottom: 5px;}
+
+
+            }
+           
+            .button{
+                padding: 10px;
+                width: fit-content;
+                @media screen and (max-width: 480px) {
+                    padding: 5px;}
+
+
+            }
+            
+            a{
+                       
+                background-color: #6C63FF;
+                text-decoration: none;
+                font-size: 15px;
+                border-radius: 5px;
+                align-content: center;
+                cursor: pointer;
+                border: none;
+                text-decoration: none;
+                @media screen and (max-width: 480px) {
+                    font-size: 10px;}
+
+                
+                
+                
+                
+            
+    }
+    a:hover{
+        color: bisque;
+
+    }}
+        }
+}}
