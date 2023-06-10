@@ -4,9 +4,9 @@ import "./recentwork.scss";
 function Recentwork() {
   return (
     <div className="recentwork" id="recentwork">
-      <div className="pgtittle">
-        <h2>My Recent Works</h2>
-      </div>
+      <h2 className="pgtittle">
+        My Recent Works
+      </h2>
       <div className="wrapper">
         <div className="imagecontainer">
           <img src="./assets/work1.png" alt="" />
