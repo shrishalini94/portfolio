@@ -1,6 +1,7 @@
-import React from 'react'
+import React from 'react';
 import './about.scss';
-import  shalini from './shalini/shalini.pdf'
+import ShriShalini2023 from './shalini/ShriShalini2023.pdf';
+
 
 function About() {
   return (
@@ -18,7 +19,7 @@ function About() {
             <h3>UI/UX Developer</h3>
             <p>
             I am shrishalini ui/ux developer from chennai. I have experience in designing and building websites as well as applications        </p>
-            <a href ={shalini}  download className="button">Download Resume</a>
+            <a href ={ShriShalini2023}  download className="button">Download Resume</a>
         </div>
         </div>
         </div>
