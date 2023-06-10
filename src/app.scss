@@ -1,15 +1,14 @@
+
+
 .app{
-    
-    
+   
     .sections{
         background-image:url('./hand.avif');
         background-size:contain;
         position:relative;
         scroll-snap-type: y mandatory;
         scroll-behavior: smooth;
-        &::-webkit-scrollbar{
-            display: none;
-        }
+       
        
        }
        @media screen and (max-width: 480px) {
@@ -19,6 +18,12 @@
         }
     
     }
+
+
+
+    body::-webkit-scrollbar{
+        display: none;
+      }
   /* @media screen and (max-width:480px) {
             
         .app{

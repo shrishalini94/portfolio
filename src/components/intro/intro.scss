@@ -1,94 +1,87 @@
-.intro{
-    display :flex;
-    flex-direction: row;
+.intro {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+  height: 100vh;
+  .togglebutton {
+    position: fixed;
+    right: 25px;
+    top: 25px;
+    @media screen and (max-width: 480px) {
+      display: none;
+    }
+  }
+
+  .left {
+    display: flex;
     align-items: center;
     justify-content: center;
-    
-    height: 100vh;
-    .togglebutton{
-        position: fixed;
-        right:25px;
-        top:25px;
-        @media screen and (max-width: 480px) {
-            display: none;}
-    }
-    
-   
-   
+    position: relative;
+    flex-direction: column;
+    .imgContainer {
+      width: 300px;
+      height: 300px;
+      border-radius: 500px;
 
-    .left{
-        
-        display :flex;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    h2,
+    p {
+      margin-top: 10px;
+    }
+
+    .iconcontainer {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin-top: 10px;
+      color: #6c63ff;
+      overflow: hidden;
+      padding-left: 20px;
+      padding-right: 20px;
+      cursor: pointer;
+      .icons {
+        margin-bottom: 10px;
+        color: #6c63ff;
+        overflow: hidden;
+        padding-left: 10px;
+        padding-right: 10px;
+        cursor: pointer;
+      }
+      .icons:hover{
+        color:pink
+      }
+    }
+    button {
+      background-color: crimson;
+      cursor: pointer;
+      font-weight: bolder;
+      font-size: 15px;
+      color: white;
+    }
+    button:hover {
+      color: #6c63ff;
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    flex-direction: column;
+    align-items: center;
+
+    .left {
+      .imgContainer {
+        width: 150px;
+        height: 150px;
+        border-radius: 500px;
+
+        display: flex;
         align-items: center;
         justify-content: center;
-        position: relative;
-        flex-direction: column;
-        margin-left: 100px;
-        .imgContainer{
-            width:300px;
-            height: 300px;
-            border-radius: 500px;
-            
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            
-        }
-        h2 ,p{
-            margin-top: 10px;
-        }
-        .iconcontainer{
-            display:flex;
-            flex-direction: row;
-            justify-content: space-between;
-            margin-top: 10px;
-            color: #6C63FF;
-            overflow: hidden;
-            padding-left: 20px;
-            padding-right: 20px;
-            cursor: pointer;
-            .icons{
-                margin-bottom: 10px;
-                color: #6C63FF;
-                overflow: hidden;
-                padding-left: 10px;
-                padding-right: 10px;
-                cursor: pointer;
-            }
-        }
-        button{
-            background-color: crimson;
-            cursor: pointer;
-            font-weight: bolder;
-            font-size: 15px;
-            color: white;
-            
-        }
-        button:hover{
-            color: #6C63FF;
-        }
+      }
     }
-   
-    @media screen and (max-width: 480px) {
-        flex-direction: column;
-        align-items: center;
-
-            .left{
-                .imgContainer{
-                    width:150px;
-                    height: 150px;
-                    border-radius: 500px;
-                    
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    
-                }
-
-            }
-
-            
-            }
-        
-            
-    }
+  }
+}

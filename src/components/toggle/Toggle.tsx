@@ -47,7 +47,7 @@ type Theme = 'light' | 'dark';
 function Toggle() {
   const [theme, setTheme] = useState<Theme>('light');
 
-  useEffect(() => {
+ /* useEffect(() => {
     // When the component mounts, check for the user's preferred color scheme
     const preferredTheme = localStorage.getItem('theme') as Theme | null;
     if (preferredTheme) {
@@ -58,7 +58,7 @@ function Toggle() {
         setTheme('dark');
       }
     }
-  }, []);
+  }, []);*/
 
   useEffect(() => {
     // When the theme changes, set the class on the body element and save to local storage

@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/static/css/main.adbe866c.css",
+    "main.js": "/static/js/main.439588e9.js",
+    "static/media/shalini.pdf": "/static/media/shalini.6ba47c3fe710b0b2f5c3.pdf",
+    "static/media/hand.avif": "/static/media/hand.f347f6fc538b59efc8f1.avif",
+    "index.html": "/index.html",
+    "main.adbe866c.css.map": "/static/css/main.adbe866c.css.map",
+    "main.439588e9.js.map": "/static/js/main.439588e9.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.adbe866c.css",
+    "static/js/main.439588e9.js"
+  ]
+}

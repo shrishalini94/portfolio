@@ -1,6 +1,6 @@
-
 import React, { useState } from "react";
-import './butoon.scss';
+import "./butoon.scss";
+import KeyboardArrowUp from '@mui/icons-material/KeyboardArrowUp';
 
 const ScrollUpButton = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -12,36 +12,28 @@ const ScrollUpButton = () => {
     setIsVisible(scrollTop > windowHeight);
   };*/
 
- 
-
   React.useEffect(() => {
-    window.addEventListener("scroll",() => {
-      if(window.scrollY>100)
-      {
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 100) {
         setIsVisible(true);
-      }
-      else{
+      } else {
         setIsVisible(false);
       }
-      });
-    },[])
+    });
+  }, []);
 
-    const handleClick = () => {
-      window.scrollTo({
-        top: 0,
-        behavior: "smooth",
-      });
-    };
-
-    
-
-    
+  const handleClick = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
 
   return (
     <>
       {isVisible && (
         <button className="scroll-up-button" onClick={handleClick}>
-          Scroll to top
+          <KeyboardArrowUp/>
         </button>
       )}
     </>
